@@ -1,5 +1,8 @@
 ## Getting Started
 
+#Packages required
+You have to install expo.
+
 Download with: 
 
 ```
