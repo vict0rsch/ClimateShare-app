@@ -14,7 +14,7 @@ You have additional documentation on what Expo is here : https://docs.expo.io/ve
 Download with: 
 
 ```
-git clone 
+git clone https://github.com/cc-ai/ClimateShare-app.git 
 ```
 
 Install Libs:
