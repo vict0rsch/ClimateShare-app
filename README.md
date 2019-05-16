@@ -1,2 +1,19 @@
-# ClimateShare-app
-React Native app for sharing photos
+## Getting Started
+
+Download with: 
+
+```
+git clone 
+```
+
+Install Libs:
+
+``` 
+yarn
+```
+
+Run with:
+
+```sh 
+expo start
+```
