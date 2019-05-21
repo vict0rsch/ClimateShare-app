@@ -18,6 +18,22 @@ import SelectPhotoScreen from './screens/SelectPhotoScreen';
 import SetLocationScreen from './screens/SetLocationScreen';
 import PictureUploadedScreen from './screens/PictureUploadedScreen';
 
+
+// About content
+const aboutTitle = "About ClimatePix";
+
+const aboutText = `This project has been initiated from an effort of the Québec Institute for 
+Artificial Intelligence (Mila, Quebec) to obtain a dataset of flood pictures 
+in order to build Machine Learning models that will be useful for the society. \n 
+Public awareness and concern about climate change often do not match the magnitude 
+of its threat to humans and our environment. One reason for this disagreement 
+is that it is difficult for young people to mentally simulate the effects of 
+climate change, which is an inherently complex process. \nOur project aims to 
+address this issue by developing an interactive educational tool to present 
+accurate and personalized outcomes of climate change as well as their underlying 
+processes. \nBy downloading this app, you will be able to send us your pictures 
+of floods, fires, earthquakes etc. and your help will be greatly appreciated!`;
+
 // Create our main tab navigator for moving between the Feed and Photo screens
 const navigator = createBottomTabNavigator(
   {
@@ -62,25 +78,15 @@ const stackNavigator = createStackNavigator(
               title='About'
               onPress={() => {
                 Alert.alert(
-                  'About FloodReport',
-                  'This project has been initiated from an effort of the Montreal Institute ' +
-                  'for Learning Algorithms (Mila, Quebec) to obtain a dataset of flood pictures ' +
-                  'in order to build Machine Learning models that will be useful for the society. \n' +
-                  'Public awareness and concern about climate change often do not match the magnitude' +
-                  ' of its threat to humans and our environment. One reason for this disagreement ' +
-                  'is that it is difficult for young people to mentally simulate the effects of ' +
-                  'climate change, which is an inherently complex process. \nOur project aims to ' +
-                  'address this issue by developing an interactive educational tool to present ' +
-                  'accurate and personalized outcomes of climate change as well as their underlying ' +
-                  'processes. \nBy downloading this app, you will be able to send us your pictures ' +
-                  'of floods, fires, earthquakes,... and your help will be greatly appreciated!',
-                  [
-                    {
-                      text: 'OK',
-                      style: 'cancel',
-                    },
-                  ],
-                  {cancelable: false},
+                    aboutTitle,
+                    aboutText,
+                    [
+                        {
+                            text: 'OK',
+                            style: 'cancel',
+                        },
+                    ],
+                    { cancelable: false },
                 );
               }}
             />
